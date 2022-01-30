@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         loop: true,
         speed: 3000,
-        allowTouchMove: false,
 
         effect: "fade",
         autoplay: {
@@ -27,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
         speed: 1200,
         direction: "vertical",
         mousewheel: true,
+        breakpoints: {
+            1025: {
+                allowTouchMove: false,
+            }
+        }
     });
 
     let menu = document.querySelector('.menu');
