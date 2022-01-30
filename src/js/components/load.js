@@ -1,6 +1,6 @@
 new Vivus('my-svg', {
     type: 'delayed',
-    duration: 900,
+    duration: 500,
     animTimingFunction: Vivus.EASE_OUT,
 },
 );
