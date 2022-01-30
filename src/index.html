@@ -15,11 +15,37 @@
 
 <body>
 	<div class="page">
-		@include('partials/load.html')
+		<!-- @include('partials/load.html') -->
 		@include('partials/header.html')
 
 
-		section.promo
+		<section class="promo">
+			<div class="swiper promo-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="promo-item">
+							<img class="promo-item__img" loading="lazy" src="img/promo-img.jpg" alt="img">
+							<p class="promo-item__text">
+								"Потенциал, скрытый в сердцевине желудя — невидимый дубовый лес".
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="promo-item">
+							<img class="promo-item__img" loading="lazy" src="img/promo-img2.jpg" alt="img">
+							<p class="promo-item__text">
+								"Потенциал, скрытый в сердцевине желудя — невидимый дубовый лес".
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="promo-arrows">
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
 
 
 		@include('partials/footer.html')
