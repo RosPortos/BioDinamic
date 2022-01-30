@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
 
-    &.active {
+    &.swiper-slide-active {
         .special-menu__item {
 
             transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
@@ -294,7 +294,7 @@
 }
 
 .special-menu__link-item {
-    color: #130f4b;
+    color: #5b63bd;
     font-size: 10px;
     line-height: 12px;
     font-weight: 550;
@@ -322,7 +322,7 @@
 }
 
 .special-menu__link-text {
-    color: #130f4b;
+    color: #5b63bd;
     font-size: 10px;
     line-height: 12px;
     font-weight: 550;

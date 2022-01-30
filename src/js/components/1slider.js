@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         loop: true,
         speed: 3000,
+        allowTouchMove: false,
+
         effect: "fade",
         autoplay: {
             delay: 5000,
@@ -19,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
+
+    var swiper2 = new Swiper(".main-slider", {
+        effect: "fade",
+        speed: 1200,
+        direction: "vertical",
+        mousewheel: true,
+    });
 
 
 });

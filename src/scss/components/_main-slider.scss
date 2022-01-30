@@ -1,0 +1,11 @@
+.main-slider__wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.main-slide {
+    &.swiper-slide-active {
+        z-index: 3;
+    }
+}
