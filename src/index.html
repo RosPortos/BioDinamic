@@ -18,8 +18,16 @@
 
 <body>
 	<div class="page">
-		<!-- @include('partials/load.html') -->
+		@include('partials/load.html')
 		@include('partials/header.html')
+
+		<div class="menu">
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 
 
 		<section class="promo">
@@ -37,7 +45,8 @@
 						<div class="promo-item">
 							<img class="promo-item__img" loading="lazy" src="img/promo-img2.jpg" alt="img">
 							<p class="promo-item__text">
-								Айсберг - прекрасная метаформа для исследования человеческого существа, потому что мы
+								Айсберг - прекрасная метаформа для исследования человеческого существа,
+								потому что мы
 								можем увидеть только самую
 								верхушку айсберга.
 							</p>
@@ -47,9 +56,11 @@
 						<div class="promo-item">
 							<img class="promo-item__img" loading="lazy" src="img/promo-img.jpg" alt="img">
 							<p class="promo-item__text">
-								Черви не будут есть живое дерево, в котором течет жизненный сок; ржавчина не будет
+								Черви не будут есть живое дерево, в котором течет жизненный сок; ржавчина не
+								будет
 								затруднять открытие ворот, если петли
-								вращаются каждый день. Движение дает здоровье и жизнь. Застрой приносит болезнь и
+								вращаются каждый день. Движение дает здоровье и жизнь. Застрой приносит
+								болезнь и
 								смерть.
 								Пословица в традиционной китайской медицине
 							</p>
@@ -63,6 +74,7 @@
 				<div class="swiper-pagination"></div>
 			</div>
 		</section>
+
 
 		<section class="special-menu">
 			<div class="special-menu__item">
@@ -85,6 +97,11 @@
 				<p class="special-menu__link-item">Растановки по Хеллингеру (родовые сценарии)</p>
 			</div>
 		</section>
+
+
+
+
+
 
 
 		@include('partials/footer.html')

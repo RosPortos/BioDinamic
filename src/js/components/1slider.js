@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swiper = new Swiper(".promo-swiper", {
         slidesPerView: 1,
-        spaceBetween: 30,
         loop: true,
-        speed: 2000,
+        speed: 3000,
         effect: "fade",
-        /* autoplay: {
-            delay: 2500,
+        autoplay: {
+            delay: 5000,
             disableOnInteraction: false,
-        }, */
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -19,5 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: ".promo .swiper-button-prev",
         },
     });
+
+
 
 });

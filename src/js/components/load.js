@@ -16,7 +16,7 @@ if (!sessionStorage.getItem("doNotShow")) {
     setTimeout(() => {
         load.classList.remove('show');
         document.body.style.overflow = "";
-    }, 10000);
+    }, 7000);
 }
 
 sessionStorage.setItem("doNotShow", true);
