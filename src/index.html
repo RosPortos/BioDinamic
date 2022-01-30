@@ -10,16 +10,14 @@
 	<title>Page</title>
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
 	<div class="page">
+		@include('partials/load.html')
 		@include('partials/header.html')
 
-		<div class="load">
-			<img loading="lazy" src="img/load1.svg" alt="img">
-			<img class="hide" loading="lazy" src="img/load2.svg" alt="img">
-		</div>
 
 		@include('partials/footer.html')
 	</div>
