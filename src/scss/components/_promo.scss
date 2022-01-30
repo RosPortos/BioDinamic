@@ -183,15 +183,6 @@
             opacity: 0;
         }
     }
-    .swiper-button-prev {
-        &::after, 
-        &::before {
-            transform: rotate(180deg);
-        }
-    }
-
-    .cercle {
-
-    }
 }
+
 
