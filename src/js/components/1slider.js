@@ -22,11 +22,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    var swiper2 = new Swiper(".main-slider", {
+    const swiper2 = new Swiper(".main-slider", {
         effect: "fade",
         speed: 1200,
         direction: "vertical",
         mousewheel: true,
+    });
+
+    let menu = document.querySelector('.menu');
+
+    swiper2.on('slideChange', function () {
+        if (swiper2.activeIndex > 0) {
+            menu.classList.add('color-blue');
+        } else {
+            menu.classList.remove('color-blue');
+        }
     });
 
 
