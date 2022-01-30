@@ -1,6 +1,12 @@
 .main-slider__wrapper {
     width: 100vw;
     height: 100vh;
+    .swiper-slide {
+        opacity: 0 !important;
+    }
+    .swiper-slide-active {
+        opacity: 1 !important;
+    }
 }
 
 
