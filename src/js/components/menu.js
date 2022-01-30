@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
     menu();
 
 
+    $('.burger').on('click', function () {
+        $('.burger,.nav ').toggleClass('active');
+    });
+
+
 
 
 

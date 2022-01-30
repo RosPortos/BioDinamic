@@ -5,6 +5,7 @@
     z-index: 200;
     width: 65px;
     height: 65px;
+    z-index: 1000;
 }
 
 .burger {
@@ -14,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 350;
+    z-index: 3500;
     cursor: pointer;
     position: relative;
     border-radius: 50%;
@@ -39,6 +40,7 @@
         width: 15px;
         display: block;
         border-radius: 5px;
+        transition: all 0.3s ease-in-out;
         &:nth-child(1) {
             top: 16px;
         }
@@ -51,18 +53,81 @@
         }
     }
     &.active {
+        background-color: #fff;
+        border: 1px solid rgb(0, 0, 0);
+        transform: translate3d(0, 0, 0) !important;
+        span {
+            background-color: #000;
+        }
         span {
             &:nth-child(1) {
-                top: 6px;
+                top: 21px;
                 transform: rotate(45deg);
             }
             &:nth-child(2) {
                 opacity: 0;
             }
             &:nth-child(3) {
-                bottom: 7px;
+                bottom: 21px;
                 transform: rotate(-45deg);
             }
         }
+    }
+}
+
+.nav {
+    width: 962px;
+    height: 962px;
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    z-index: 510;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate3d(481px, -481px, 0) scale(0);
+    transition: all 800ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &.active {
+        transform: translate3d(481px, -481px, 0) scale(1);
+        transition: all 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    }
+}
+
+.nav__list {
+    flex-direction: column;
+    @include adaptive("font-size", 30, 18);
+    @include adaptive("line-height", 43, 33);
+    margin-bottom: 20px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 42px 0 0 -254px;
+    text-align: right;
+}
+
+.nav__link {
+    color: #324497;
+    transition: all 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &:hover {
+        letter-spacing: 0.1em;
+        color: #324497;
+    }
+}
+
+.nav__bottom {
+    margin-top: 20px;
+}
+
+.nav__bottom--link {
+    color: #324497;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 550;
+    letter-spacing: 0.4em;
+    display: block;
+    transition: all 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &:hover {
+        letter-spacing: 0.3em;
+        color: #324497;
     }
 }
