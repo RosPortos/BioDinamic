@@ -1,3 +1,4 @@
+
 if (!sessionStorage.getItem("doNotShow")) {
     new Vivus('my-svg', {
         type: 'delayed',

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        speed: 1000,
+        speed: 2000,
         effect: "fade",
         /* autoplay: {
             delay: 2500,
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".promo .swiper-button-next",
+            prevEl: ".promo .swiper-button-prev",
         },
     });
 
