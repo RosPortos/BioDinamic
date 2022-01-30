@@ -16,12 +16,9 @@
 
     &.animated {
 
-        .path,
-        .path2 {
-            transition: fill 2s linear;
-            transition-delay: 7s;
+        .path {
+            transition: clip-path 2s linear;
         }
-
 
         .cls-1 {
             fill: none;
@@ -29,26 +26,38 @@
 
         .cls-2 {
             fill: #1163a6;
+            transition: fill 2s linear;
+            transition-delay: 4s;
         }
 
         .cls-3 {
             fill: #edc19c;
+            clip-path: circle(275px at 180% 50%);
+            transition-delay: 4s;
         }
 
         .cls-4 {
             fill: #218ece;
+            clip-path: circle(218px at 180% 50%);
+            transition-delay: 4s;
         }
 
         .cls-5 {
             fill: #eec29b;
+            clip-path: circle(218px at 180% 50%);
+            transition-delay: 4s;
         }
 
         .cls-6 {
             fill: #cca283;
+            transition: fill 2s linear;
+            transition-delay: 4s;
         }
 
         .cls-7 {
             fill: #fddec8;
+            transition: fill 2s linear;
+            transition-delay: 4s;    
         }
     }
 }
@@ -59,38 +68,35 @@
 }
 
 .cls-2 {
-    
     fill: transparent;
     stroke: #1163a6;
     stroke-width: 1px;
 }
 
 .cls-3 {
-    
-    fill: transparent;
+    clip-path: circle(0 at 180% 50%);
 
+    fill: transparent;
     stroke: #edc19c;
     stroke-width: 1px;
 }
 
 .cls-4 {
-    
-    fill: transparent;
+    clip-path: circle(0 at 180% 50%);
 
-    stroke: #218ece;
+    fill: transparent;
     stroke-width: 1px;
 }
 
 .cls-5 {
+    clip-path: circle(0 at 180% 50%);
     
     fill: transparent;
-    // fill: #eec29b;
     stroke: #eec29b;
     stroke-width: 1px;
 }
 
 .cls-6 {
-    
     fill: transparent;
     // fill: #cca283;
     stroke: #cca283;
@@ -98,7 +104,6 @@
 }
 
 .cls-7 {
-    
     fill: transparent;
     // fill: #fddec8;
     stroke: #fddec8;
