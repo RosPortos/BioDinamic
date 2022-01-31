@@ -10,13 +10,17 @@
 @mixin list-scroll {
     scrollbar-color: #222332 #fff;
     &::-webkit-scrollbar-track {
+        border-radius: 10px;
         background-color: transparent;
     }
     &::-webkit-scrollbar {
-        height: 10px;
+        height: 6px;
         background-color: #FFF;
+        width: 6px;
     }
     &::-webkit-scrollbar-thumb {
-        background: #696969;
+        background: #afafaf;
+        border-radius: 10px;
+        width: 6px;
     }
 }

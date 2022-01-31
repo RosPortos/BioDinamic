@@ -1,11 +1,8 @@
 .menu {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    z-index: 200;
     width: 65px;
     height: 65px;
-    z-index: 1000;
+    position: fixed;
+    right: 40px;
     &.active {
         &::before {
             opacity: 1;
@@ -38,13 +35,11 @@
 .burger {
     height: 45px;
     width: 45px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3500;
     cursor: pointer;
-    position: relative;
     border-radius: 50%;
     border: 1px solid #fff;
     position: absolute;
