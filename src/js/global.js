@@ -11,5 +11,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    function changePage() {
+        $("body").css("display", "none");
+
+        $("body").fadeIn(1000);
+
+        let linkLocation;
+
+        $("a.link-page").click(function (event) {
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+    }
+
+    changePage();
+
+
 
 });
