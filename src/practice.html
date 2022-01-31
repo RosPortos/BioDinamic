@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="scroll-hide">
+    <div class="page">
+        @include('partials/load.html')
+        @include('partials/header.html', {
+        "header": "active",
+        })
+
+        <section class="practice">
+            <div class="container">
+                <div class="practice__inner">
+                    <h2 class="practice__title">Вас может заинтересовать моя практика, если у Вас:</h2>
+                    <ul class="practice__list">
+                        <li class="practice__item">
+                            <p class="practice__text">Быстрая утомляемость, хроническая усталость, длительный стресс, состояние «нет сил и ничего не хочется», снижение иммунитета.
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Заболевания внутренних органов.</p>
+                            <p class="practice__text">Заболевания опорно-двигательного аппарата, нарушение координации.</p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Проблемы у детей ( особенно родовые травмы и последствия операций).
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Нарушения в работе нервной системы (ВСД, панические атаки, неврозы, депрессии, раздражительность, ухудшение памяти и внимания, нарушение сна, нейропатия черепных и лицевых нервов и т.п.).
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Женские проблемы.
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Сложные родовые сценарии, повторяющиеся сложные события и заболевания, которые идут по роду.
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Проблемы с позвоночником, различные виды боли. 
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Последствия операций, физических травм, различных видов наркозов (особенно эпидуральной анестезии), интоксикаций, длительного приема различных препаратов. Состояния после черепно-мозговых травм, повреждений спинного мозга. 
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Сложные родовые сценарии, повторяющиеся сложные события и заболевания, которые идут по роду.
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Заболевания внутренних органов.</p>
+                            <p class="practice__text">Заболевания опорно-двигательного аппарата, нарушение координации.</p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">Зубо-челюстные паталогии, последствия сложных стоматологических вмешателсьств. 
+                            </p>
+                        </li>
+                        <li class="practice__item">
+                            <p class="practice__text">И многие другие заболевания.</p>
+                        </li>
+                    </ul>
+                    <p class="practice__descr">У меня нет «волшебной таблетки", но я могу сделать свою работу, сделать все, что в моих силах, применить все знания и навыки, которые у меня есть.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
