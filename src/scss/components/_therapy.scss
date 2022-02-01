@@ -1,0 +1,277 @@
+.therapy {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.therapy__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.therapy__tabs {
+    width: 30vw;
+    height: 30vw;
+
+    border: 1px solid #000;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.therapy__tab {
+    width: 70px;
+    height: 70px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    position: absolute;
+    
+    @media(max-width:1440px) {
+        width: 60px;
+        height: 60px;
+    }
+
+    &::before {
+        content: '';
+        border: 2px solid #130f4b54;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: .2s linear;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:nth-child(1) {
+        top: 0%;
+        right: 25%;
+    }
+
+    &:nth-child(2) {
+        top: 20%;
+        right: 1%;
+    }
+
+    &:nth-child(3) {
+        bottom: 20%;
+        right: 1%;
+    }
+
+    &:nth-child(4) {
+        bottom: 0%;
+        right: 25%;
+    }
+
+    &.active::before {
+        background-color: #d1ceffc7;
+    }
+
+    &:hover:not(.active) {
+        @media(min-width:1024px) {
+            &::before {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.therapy__tab-text {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    @include adaptive("font-size", 18, 14);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #130f4b;
+    white-space: nowrap;
+}
+
+.therapy__content-item {
+    display: none;
+    width: 50vw;
+    padding: 20px;
+
+    border: 2px dashed #000;
+    border-radius: 10px;
+
+    transition: .3s linear;
+
+    @media(max-width:1440px) {
+        padding: 10px;
+    }
+
+    &.active {
+        display: block;
+
+        animation: fade .3s linear;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.therapy__content-wrapper {
+    margin-bottom: 20px;
+    max-height: 40vh;
+    padding: 5px;
+
+    overflow: hidden;
+    overflow-y: scroll;
+    @include list-scroll;
+}
+
+.therapy__content-text {
+    @include adaptive("font-size", 16, 12);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #130f4b;
+
+    &--more {
+        margin-top: 15px;
+        display: none;
+    }
+}
+
+.therapy__btn {
+    margin-top: 15px;
+
+    @include adaptive("font-size", 18, 14);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #1100ff;
+
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        height: 1px;
+        background-color: #1100ff;
+
+        transition: .2s linear;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    @media(min-width:1024px) {
+        &:hover::before {
+            transform: translateX(100%);
+        }
+    }
+
+    span {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &.active {
+        span {
+            &:nth-child(1) {
+                display: none;
+            }
+
+            &:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.therapy__slider {
+    height: 20vh;
+    padding: 2px;
+
+    position: relative;
+}
+
+.therapy__slide {
+    padding: 20px;
+
+    border: 2px dashed #000;
+    border-radius: 10px;
+
+    @media(max-width:1440px) {
+        padding: 10px;
+    }
+
+    @media(min-width:1024px) {
+        &:hover {
+            .therapy__slider-subtitle {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.therapy__slider-title {
+    @include adaptive("font-size", 18, 14);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000;
+}
+
+.therapy__slider-subtitle {
+    @include adaptive("font-size", 16, 12);
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000;
+
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    @media(min-width:1024px) {
+        opacity: 0;
+        transition: .2s linear;
+    }
+}
+
+.therapy-button-next,
+.therapy-button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    width: 20px;
+    height: 20px;
+
+    border-right: 3px solid #1100ff;
+    border-top: 3px solid #1100ff;
+    cursor: pointer;
+
+    transition: .2s linear;
+
+    &.swiper-button-disabled {
+        opacity: .4;
+    }
+}
+
+.therapy-button-next {
+    right: 20px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.therapy-button-prev {
+    left: 20px;
+    transform: translateY(-50%) rotate(-135deg);
+}

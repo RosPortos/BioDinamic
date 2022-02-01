@@ -43,5 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    var swiper3 = new Swiper(".therapy__slider", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: ".therapy-button-next",
+            prevEl: ".therapy-button-prev",
+        },
+    });
 
 });
