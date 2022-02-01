@@ -2,7 +2,7 @@
 if (!sessionStorage.getItem("doNotShow")) {
     new Vivus('my-svg', {
         type: 'delayed',
-        duration: 1000,
+        duration: 6000,
         animTimingFunction: Vivus.EASE_OUT,
     },
     );
