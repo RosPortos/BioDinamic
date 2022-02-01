@@ -1,7 +1,6 @@
 .tabs-sec {
     width: 100%;
     height: 100%;
-    padding-top: 115px;
     .container {
         display: flex;
         justify-content: space-between;
@@ -24,9 +23,7 @@
         transition: all 0.3s ease-in-out;
         padding-left: 17px;
         width: fit-content;
-        &:hover {
-            letter-spacing: 0.1em;
-        }
+        
         &::before {
             position: absolute;
             content: '';
@@ -42,14 +39,12 @@
             transition: all 0.3s ease-in-out;
         }
     }
-
     .tab-active {
         letter-spacing: 0.1em;
         &::before {
             background-color: #d1ceffc7;
         }
     }
-
     .tab-content-wrapper {
         width: 55%;
         max-height: 85vh;
@@ -60,7 +55,6 @@
         position: relative;
         animation: tilt-in-br 0.95s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-
     .tabs-content {
         display: none;
         @include adaptive("font-size", 20, 16);
@@ -75,6 +69,38 @@
 
 }
 
+@media (min-width: 920px) {
+    .tabs-sec {
+        .tab {
+            &:hover {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
+
+
+.gallery {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    a {
+        overflow: hidden;
+        transition: all 1s ease-in-out;
+        &:hover {
+            border-radius: 20% 40% 20% 40%;
+            img {
+                transform: scale(1.1);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 4s ease-in-out;
+        }
+    }
+}
 
 @keyframes tilt-in-bl {
     0% {

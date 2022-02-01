@@ -44,4 +44,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    const swiper3 = new Swiper(".reviews-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        speed: 1000,
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: false,
+            draggable: true,
+            snapOnRelease: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            820: {
+                slidesPerView: 2,
+            },
+            300: {
+                slidesPerView: 1,
+            },
+        },
+    });
+
+
+    let test = document.querySelectorAll('.reviews-item');
+
+    console.log(test.length);
+
+
+
 });

@@ -114,7 +114,7 @@
 
 .nav__list {
     flex-direction: column;
-    @include adaptive("font-size", 30, 18);
+    @include adaptive("font-size", 30, 22);
     @include adaptive("line-height", 43, 33);
     margin-bottom: 20px;
     width: 200px;
