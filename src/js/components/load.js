@@ -1,5 +1,5 @@
 
-if (!sessionStorage.getItem("doNotShow")) {
+/* if (!sessionStorage.getItem("doNotShow")) {
     new Vivus('my-svg', {
         type: 'delayed',
         duration: 6000,
@@ -17,6 +17,16 @@ if (!sessionStorage.getItem("doNotShow")) {
         load.classList.remove('show');
         document.body.style.overflow = "";
     }, 7000);
-}
+} */
 
-sessionStorage.setItem("doNotShow", true);
+// sessionStorage.setItem("doNotShow", true);
+
+
+const load = document.querySelector('.load');
+document.body.style.overflow = "hidden";
+load.classList.add('show');
+
+setTimeout(() => {
+    load.classList.remove('show');
+    document.body.style.overflow = "";
+}, 5000);

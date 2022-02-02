@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 3000;
 
     &.show {
         transition: unset;
@@ -121,4 +121,10 @@
     stroke: #fddec8;
     stroke-width: 1px;
 
+}
+
+.intro__video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
 }
