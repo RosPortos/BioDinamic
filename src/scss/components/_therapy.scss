@@ -96,22 +96,28 @@
     }
 
     &:nth-child(2) {
-        top: 20%;
-        right: 1%;
+        top: 50%;
+        right: -6%;
+        transform: translateY(-50%);
 
         @media(max-width:1439px) {
             right: unset;
             left: -6%;
         }
+
+        @media(max-width:1023px) {
+            transform: translateY(0);
+        }
     }
 
     &:nth-child(3) {
-        bottom: 20%;
-        right: 1%;
+        bottom: 0%;
+        right: 25%;
 
         @media(max-width:1439px) {
             right: unset;
-            left: -6%;
+            left: 25%;
+            bottom: -5%;
         }
     }
 

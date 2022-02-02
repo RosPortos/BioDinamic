@@ -21,7 +21,7 @@
 
 // sessionStorage.setItem("doNotShow", true);
 
-
+/* 
 const load = document.querySelector('.load');
 document.body.style.overflow = "hidden";
 load.classList.add('show');
@@ -29,4 +29,4 @@ load.classList.add('show');
 setTimeout(() => {
     load.classList.remove('show');
     document.body.style.overflow = "";
-}, 5000);
+}, 5000); */
