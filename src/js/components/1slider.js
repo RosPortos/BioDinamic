@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    const swiper4 = new Swiper(".reviews-swiper", {
+    const swiper5 = new Swiper(".reviews-swiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         speed: 1000,
