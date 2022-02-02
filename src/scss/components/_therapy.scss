@@ -340,6 +340,14 @@
     &.swiper-button-disabled {
         opacity: .4;
     }
+
+    @media(max-width:767px) {
+        width: 14px;
+        height: 14px;
+
+        border-right: 2px solid #1100ff;
+        border-top: 2px solid #1100ff;
+    }
 }
 
 .therapy-button-next {
