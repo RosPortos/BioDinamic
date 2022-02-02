@@ -43,12 +43,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var swiper3 = new Swiper(".therapy__slider", {
+    var swiper4 = new Swiper(".therapy__slider", {
         slidesPerView: 3,
         spaceBetween: 20,
         navigation: {
             nextEl: ".therapy-button-next",
             prevEl: ".therapy-button-prev",
+        },
+        observer: true,
+        observeParents: true,
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+            },
+            500: {
+                slidesPerView: 2,
+            },
+            300: {
+                slidesPerView: 1,
+            },
         },
     });
 

@@ -20,18 +20,20 @@ function initTherapyTabs() {
 
 
     tabs.forEach(item => {
-        item.addEventListener('click', function() {
-            let current = this;
+        item.addEventListener('click', function () {
+            if (window.innerWidth >= 1024) {
+                let current = this;
 
-            tabs.forEach((item, i) => {
-                if(item == current ) {
-                    current.classList.add("active");
-                    tabsContent[i].classList.add("active");
-                } else {
-                    item.classList.remove('active');
-                    tabsContent[i].classList.remove('active');
-                }
-            });
+                tabs.forEach((item, i) => {
+                    if (item == current) {
+                        current.classList.add("active");
+                        tabsContent[i].classList.add("active");
+                    } else {
+                        item.classList.remove('active');
+                        tabsContent[i].classList.remove('active');
+                    }
+                });
+            }
         });
     });
 
