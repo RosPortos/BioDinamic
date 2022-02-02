@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    const swiper3 = new Swiper(".reviews-swiper", {
+    const swiper4 = new Swiper(".reviews-swiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         speed: 1000,
@@ -89,10 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-
-    let test = document.querySelectorAll('.reviews-item');
-
-    console.log(test.length);
 
 
 
