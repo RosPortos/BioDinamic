@@ -99,6 +99,7 @@ const images = () => {
     './src/img/**.jpg',
     './src/img/**.png',
     './src/img/**.jpeg',
+    './src/img/**.mp4',
     './src/img/*.svg',
     './src/img/**/*.jpg',
     './src/img/**/*.png',

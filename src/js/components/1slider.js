@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var swiper4 = new Swiper(".therapy__slider", {
+    var swiper3 = new Swiper(".therapy__slider", {
         slidesPerView: 3,
         spaceBetween: 20,
         navigation: {
@@ -89,7 +89,26 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-
-
-
+    const swiper5 = new Swiper(".video__slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: ".video-button-next",
+            prevEl: ".video-button-prev",
+        },
+        breakpoints: {
+            1440: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2,
+            },
+            300: {
+                slidesPerView: 1.1,
+                spaceBetween: 15,
+            },
+        },
+    });
 });
