@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper(".promo-swiper", {
         slidesPerView: 1,
         loop: true,
-        speed: 3000,
+        speed: 1500,
 
         effect: "fade",
         autoplay: {
@@ -34,12 +34,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     let menu = document.querySelector('.menu');
+    let logo = document.querySelector('.logo');
 
     swiper2.on('slideChange', function () {
         if (swiper2.activeIndex > 0) {
             menu.classList.add('color-blue');
+            logo.classList.add('color-blue');
         } else {
             menu.classList.remove('color-blue');
+            logo.classList.remove('color-blue');
         }
     });
 
@@ -89,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    const swiper5 = new Swiper(".video__slider", {
+    const swiper6 = new Swiper(".video__slider", {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,

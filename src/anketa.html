@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Page</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="scroll-hide">
+    <div class="page">
+        @include('partials/load.html')
+        @include('partials/links.html')
+        @include('partials/header.html', {
+        "header": "active",
+        "logo": "color-blue",
+        })
+
+        <section class="questionnaire padding-top">
+            <div class="container">
+                <h2 class="questionnaire__title title">
+                    Обо мне
+                </h2>
+                <form class="form">
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            1. Имя.
+                        </div>
+                        <div class="form-item__right col-1">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            2. Возраст, рост, вес.
+                        </div>
+                        <div class="form-item__right col-3">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            3. Жалобы в настоящий момент (если жалоб несколько, что беспокоит больше всего?).<br> Есть
+                            ли проблемы с внутренними
+                            органами: сердце, легкие (проблемы с дыханием), пищеварительная система, мочеполовая
+                            система, проблемы с щитовидной
+                            железой и т.п.? Гипертония, сон, менструация, астма, аллергия, трудности при глотании.<br>
+                            Проблемы с нервной системой (ВСД, панические атаки и т.п.), проблемы с концентрацией.
+                        </div>
+                        <div class="form-item__right col-1">
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            4. Медицинский диагноз/диагнозы.
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            5. Травмы, операции, аварии (срабатывание подушек безопасности, хлыстовые травмы). Если
+                            были, то когда? Если были
+                            операции, какой применялся наркоз, или применялась эпидуральная анестезия?<br>
+                            Удары в грудную клетку (бокс, боевые искусства, удар в драке и т.п.); падение на спину,
+                            после которого было трудно
+                            вдохнуть.<br>
+                            Грудные импланты.
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            6. Стоматологическая история (сложности, операции, брекеты, импланты).
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            7. Серьезные заболевания в семье (у близких родственников).
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            8. Роды пациента, когда рождался сам пациент (сложности, кесарево сечение).
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            9. Рождение детей пациент(сложности, кесарево сечение).
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            9. Рождение детей пациент(сложности, кесарево сечение).
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            10. Если ли в течение дня часы, когда вдруг возникает слабость?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            Количество выпиваемой чистой питьевой воды в день (чай и кофе не учитываются).
+                        </div>
+                        <div class="form-item__right col-1">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            12. Частота и регулярность стула. Употребляете ли слабительные? Есть ли проблемы со стулом
+                            (диарея, светлый стул,
+                            непереваренные кусочки пищи и т.п.)?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            13. Камни в почках или в желчном пузыре.
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Да</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            14. Были ли на приеме у остеопата ранее?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Да</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            15. Принимали, принимаете психотропные препараты? Если да, то сколько по времени и когда?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                            <textarea name="comment" placeholder="Расскажите"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            16. Есть ли психиатрические диагнозы? Шизотипические расстройства?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Да</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            17. Принимаете наркотические вещества?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Да</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            18. Вы курите?
+                        </div>
+                        <div class="form-item__right item-checkbox">
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Да</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="checkbox">
+                                <span>Нет</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item__left">
+                            Укажите, пожалуйста, свой номер телефона, я свяжусь с Вами в ближайшее время через WhatsApp.
+                        </div>
+                        <div class="form-item__right col-1">
+                            <input class="phone-input" type="text">
+                        </div>
+                    </div>
+                    <button class="form__btn">
+                        Отправить анкету
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
