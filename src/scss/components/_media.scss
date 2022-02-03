@@ -7,6 +7,15 @@
         bottom: 5%;
         max-width: 100%;
     }
+    .form-item__left {
+        font-size: 18px;
+    }
+    .form-item__right textarea {
+        height: 200px;
+    }
+    .form-item__right textarea, input {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -131,6 +140,9 @@
     }
     .header {
         top: 0;
+        &.active {
+            padding-top: 10px;
+        }
     }
     .main-slider__wrapper .special-menu {
         padding-top: 67px;
@@ -140,6 +152,41 @@
     }
     .reviews-item {
         height: 60vh;
+    }
+    .form-item {
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .form-item__right {
+        padding-left: 0;
+    }
+    .form {
+        padding-right: 0;
+        padding-bottom: 50px;
+    }
+    .page-link {
+        display: none;
+    }
+    .padding-top {
+        padding-top: 100px;
+    }
+    .tabs-sec .tab-link-wrapper {
+        padding-left: 0;
+    }
+    .logo {
+        width: 100px;
+        svg {
+            height: 55px;
+        }
+    }
+    .practice {
+        padding-top: 70px;
+    }
+    .therapy {
+        padding-top: 70px;
+    }
+    .video {
+        padding-top: 90px;
     }
 }
 
@@ -175,5 +222,28 @@
     .phone {
         margin-right: 50px;
     }
-    
+    .form-item__right {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .form-item__right.item-checkbox input:not([type=checkbox]),
+    .form-item__right.item-checkbox textarea {
+        width: 100%;
+    }
+    .form__btn {
+        width: 100%;
+    }
+    .form-item {
+        margin-bottom: 25px;
+    }
+    .form-item__left {
+        font-size: 16px;
+    }
+    .form-item__right input {
+        height: 40px;
+    }
+    .form-item__right textarea,
+    input {
+        font-size: 16px;
+    }
 }

@@ -11,6 +11,8 @@
         row-gap: 80px;
         width: 40%;
         animation: tilt-in-bl 0.95s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        padding-left: 25px;
+        padding-top: 30px;
     }
     .tab {
         @include adaptive("font-size", 24, 18);
@@ -47,7 +49,7 @@
     }
     .tab-content-wrapper {
         width: 55%;
-        max-height: 85vh;
+        max-height: 75vh;
         overflow-y: auto;
         @include list-scroll;
         overflow-x: hidden;

@@ -11,7 +11,7 @@
     &.active {
         top: 0;
         background-color: #fff;
-        padding: 10px 40px;
+        padding: 45px 40px 10px 50px;
         .burger {
             background-color: #fff;
             border: 1px solid #324497;
@@ -35,5 +35,21 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
+    }
+}
+
+
+.logo {
+    width: 140px;
+    &.color-blue {
+        svg {
+            fill: #218ECE;
+        }
+    }
+    svg {
+        width: 100%;
+        height: 74px;
+        fill: #fff;
+        transition: all 0.3s ease-in-out;
     }
 }
