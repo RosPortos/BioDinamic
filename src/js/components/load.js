@@ -34,6 +34,24 @@ if ($('.page').hasClass('main-page')) {
         load.classList.remove('show');
     }, 5000);
 }
-    // }
+// }
 
 // sessionStorage.setItem("doNotShow", true);
+
+
+function animPracticePage() {
+    const items = document.querySelectorAll('.practice__item');
+    const title = document.querySelector('.practice__title');
+    const descr = document.querySelector('.practice__descr');
+
+    setTimeout(() => {
+        title.classList.add('active');
+        descr.classList.add('active');
+
+        items.forEach(item => {
+            item.classList.add('active');
+        });
+    }, 400);
+}
+
+animPracticePage();

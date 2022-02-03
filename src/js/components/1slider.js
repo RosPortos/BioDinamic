@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    const swiper5 = new Swiper(".video__slider", {
+    const swiper6 = new Swiper(".video__slider", {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
