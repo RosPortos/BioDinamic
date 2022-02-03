@@ -12,4 +12,11 @@
 
 .main-slide {
     z-index: 3;
+
+    @media(max-width:920px) {
+        &.about {
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    }
 }

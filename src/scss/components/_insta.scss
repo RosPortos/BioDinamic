@@ -1,6 +1,6 @@
 .insta {
-    padding-top: 110px;
-    padding-bottom: 10px;
+    padding-top: 150px;
+    padding-bottom: 30px;
 
     @media(max-width:767px) {
         padding-top: 80px;
@@ -38,18 +38,22 @@
 
 .insta__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px 40px;
-    max-height: 77vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 25px;
+    max-height: 70vh;
     padding-right: 10px;
 
     overflow: hidden;
     overflow-y: scroll;
     @include list-scroll;
 
-    @media(max-width:1439px) {
+    @media(max-width:1600px) {
+        max-height: 70vh;
+    }
+
+    @media(max-width:1440px) {
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 15px;
-        ;
     }
 
     @media(max-width:1023px) {
@@ -64,18 +68,29 @@
 }
 
 .insta__item {
-    height: 38vh;
+    display: block;
     overflow: hidden;
+
+    position: relative;
+
+
+    &:after {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+
+}
+
+.insta__link {
+    display: block;
     transition: all 1s ease-in-out;
 
-    @media(min-width:1024px) {
-        &:hover {
-
-            img {
-                transform: scale(1.1);
-            }
-        }
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     img {
         display: block;
@@ -83,6 +98,11 @@
         height: 100%;
         object-fit: cover;
         object-position: top;
-        transition: all 1s ease-in-out;
+    }
+
+    @media(min-width:1024px) {
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

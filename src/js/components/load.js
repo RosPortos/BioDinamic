@@ -44,14 +44,16 @@ function animPracticePage() {
     const title = document.querySelector('.practice__title');
     const descr = document.querySelector('.practice__descr');
 
-    setTimeout(() => {
-        title.classList.add('active');
-        descr.classList.add('active');
+    if (items.length != 0) {
+        setTimeout(() => {
+            title.classList.add('active');
+            descr.classList.add('active');
 
-        items.forEach(item => {
-            item.classList.add('active');
-        });
-    }, 400);
+            items.forEach(item => {
+                item.classList.add('active');
+            });
+        }, 400);
+    }
 }
 
 animPracticePage();
