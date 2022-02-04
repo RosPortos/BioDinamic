@@ -9,7 +9,10 @@
         @include list-scroll;
         overflow-x: hidden;
 
-        padding: 15px 10px 15px 0;
+        padding: 15px 10px 35px 0;
+    }
+    @media(max-width:920px) {
+        max-height: unset;
     }
 }
 

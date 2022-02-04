@@ -1,22 +1,110 @@
-.main-slider__wrapper {
-    width: 100vw;
-    height: 100vh;
-    .swiper-slide {
-        opacity: 0 !important;
+.main-page {
+    .page-link {
+        display: none;
     }
-    .swiper-slide-active {
-        opacity: 1 !important;
+
+    .main-slider__wrapper {
+        display: block;
     }
-}
 
-
-.main-slide {
-    z-index: 3;
-
-    @media(max-width:920px) {
+            
+    .main-slide {
         &.about {
-            overflow: hidden;
-            overflow-y: scroll;
+            padding-bottom: 40px;
+    
+            .about__wrapper {
+                height: auto;
+            }
+    
+            .about__right {
+                height: auto;
+            }
+        }
+    
+        &.insta {
+            padding-bottom: 40px;
+    
+            .insta__list {
+                max-height: unset;
+            }
+        }
+    }
+
+    &.active {
+        .main-slider__wrapper {
+            width: 100vw;
+            height: 100vh;
+        
+            .swiper-slide {
+                opacity: 0 !important;
+            }
+        
+            .swiper-slide-active {
+                opacity: 1 !important;
+            }
+        }
+        
+        .main-slide {
+            z-index: 3;
+        
+            &.about {
+                overflow: hidden;
+                overflow-y: scroll;
+                padding-bottom: 40px;
+        
+                .about__wrapper {
+                    height: auto;
+                }
+        
+                .about__right {
+                    height: auto;
+                }
+            }
+        
+            &.insta {
+                overflow: hidden;
+                overflow-y: scroll;
+                padding-bottom: 40px;
+        
+                .insta__list {
+                    max-height: unset;
+                }
+            }
+        }
+        .page-link {
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s linear;
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .page-link__top {
+            width: auto;
+            right: 0;
+            left: 35px;
+        }
+
+        .page-link__bottom {
+            width: auto;
+            right: 35px;
+        }
+
+        .menu {
+            transition: .2s linear;
+        }
+
+        .header.active {
+            @media (min-width: 920px) {
+                padding-right: 75px;
+            }
+
+            .menu {
+                right: 75px;
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 .header {
-    width: 100%;
     left: 0;
+    right: 0;
     top: 40px;
     position: fixed;
     z-index: 2000;
@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: .2s linear;
     &.active {
         top: 0;
         background-color: #fff;

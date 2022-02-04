@@ -21,7 +21,7 @@
 
 
 // if (!sessionStorage.getItem("doNotShow")) {
-
+/* 
 if ($('.page').hasClass('main-page')) {
 
     const load = document.querySelector('.load');
@@ -33,7 +33,7 @@ if ($('.page').hasClass('main-page')) {
         page.classList.remove('hide');
         load.classList.remove('show');
     }, 5000);
-}
+} */
 // }
 
 // sessionStorage.setItem("doNotShow", true);
