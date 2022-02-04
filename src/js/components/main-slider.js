@@ -96,14 +96,17 @@ function initSwiper() {
 
         slider.addEventListener('wheel', sliderWheelControl);
         $('.main-page').addClass('active');
+        $('.header').removeClass('active');
 
-    } else {
-        if (screenWidth < 1024 && swiper2 != undefined) {
-            swiper2.destroy();
-            swiper2 = undefined;
-            $('.main-page').removeClass('active');
-            $('.header').css('right', 0);
-        }
+    } else if (screenWidth < 1024 && swiper2 != undefined) {
+        swiper2.destroy();
+        swiper2 = undefined;
+        $('.main-page').removeClass('active');
+        $('.header').css('right', 0);
+    }
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $('.header').addClass('active');
     }
 }
 

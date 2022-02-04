@@ -2,33 +2,6 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-
-    &.swiper-slide-active {
-        .special-menu__item {
-
-            transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
-
-            &:nth-child(1) {
-                top: 0;
-                left: 0;
-            }
-
-            &:nth-child(2) {
-                top: 0;
-                right: 0;
-            }
-
-            &:nth-child(3) {
-                bottom: 0;
-                left: 0;
-            }
-
-            &:nth-child(4) {
-                bottom: 0;
-                right: 0;
-            }
-        }
-    }
 }
 
 .special-menu__item {
@@ -39,8 +12,55 @@
     background-color: #fff;
     overflow: hidden;
 
-    transform: translate3d(0, 0, 0) rotate(20deg) skew(30deg, 30deg);
-    transition: all 2000ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    &:nth-child(1) {
+        top: 0;
+        left: 0;
+
+        width: 50%;
+        height: 37%;
+        @media(max-width:1023px) {
+            width: 100%;
+            height: 25%;
+        }
+    }
+
+    &:nth-child(2) {
+        top: 0;
+        right: 0;
+
+        width: 50%;
+        height: 63%;
+
+        @media(max-width:1023px) {
+            width: 100%;
+            height: 25%;
+        }
+    }
+
+    &:nth-child(3) {
+        bottom: 0;
+        left: 0;
+
+        width: 50%;
+        height: 63%;
+        @media(max-width:1023px) {
+            width: 100%;
+            height: 25%;
+        }
+    }
+
+    &:nth-child(4) {
+        bottom: 0;
+        right: 0;
+
+        width: 50%;
+        height: 37%;
+
+        @media(max-width:1023px) {
+            width: 100%;
+            height: 25%;
+        }
+    }
 
     @media(max-width:1023px) {
         position: relative;
@@ -49,89 +69,6 @@
         align-items: center;
     }
 
-    &:nth-child(1) {
-        width: 50%;
-        height: 37%;
-
-        top: -37%;
-        left: -50%;
-
-        @media(max-width:1023px) {
-            width: 100%;
-            height: 25%;
-
-            // top: 0;
-            left: -100%;
-        }
-
-        &::before {
-            bottom: -25vh;
-            right: -25vw;
-        }
-    }
-
-    &:nth-child(2) {
-        width: 50%;
-        height: 63%;
-
-        top: -63%;
-        right: -50%;
-
-        @media(max-width:1023px) {
-            width: 100%;
-            height: 25%;
-
-            // top: 0;
-            right: -100%;
-        }
-
-        &::before {
-            bottom: -25vh;
-            left: -25vw;
-        }
-    }
-
-    &:nth-child(3) {
-        width: 50%;
-        height: 63%;
-
-        bottom: -63%;
-        left: -50%;
-
-        @media(max-width:1023px) {
-            width: 100%;
-            height: 25%;
-
-            left: -100%;
-            // bottom: 0;
-        }
-
-        &::before {
-            top: -25vh;
-            right: -25vw;
-        }
-    }
-
-    &:nth-child(4) {
-        width: 50%;
-        height: 37%;
-
-        bottom: -37%;
-        right: -50%;
-
-        @media(max-width:1023px) {
-            width: 100%;
-            height: 25%;
-
-            // bottom: 0;
-            right: -100%;
-        }
-
-        &::before {
-            top: -25vh;
-            left: -25vw;
-        }
-    }
 
     @media(min-width:1024px) {
         &::before {
@@ -309,21 +246,21 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        
+
         position: absolute;
         top: calc(100% + 20px);
         left: 50%;
-        
+
         margin-left: -20px;
         transition: all 1500ms cubic-bezier(0.190, 1.000, 0.220, 1.000), opacity 300ms linear;
         transition-delay: 100ms;
         opacity: 0;
         transform: translate3d(-100px, 60px, 0) scale(0.8) rotate(-12deg);
-        
+
         @media(max-width:1023px) {
             width: 25px;
             height: 10px;
-            
+
             background-image: url(../img/arrow.png);
             opacity: 1;
 
