@@ -23,6 +23,7 @@
             }
 
             .about__right {
+                overflow: visible;
                 height: auto;
             }
         }
@@ -31,6 +32,7 @@
             padding-bottom: 40px;
 
             .insta__list {
+                overflow: visible;
                 max-height: unset;
             }
         }

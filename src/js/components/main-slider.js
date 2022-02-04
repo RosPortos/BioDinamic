@@ -107,6 +107,29 @@ function initSwiper() {
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screenWidth <= 1023) {
         $('.header').addClass('active');
+        $('.main-page').addClass('animation');
+
+        function startScrollAnimation() {
+            $(document).ready(function () {
+                $(this).scroll(function () {
+                    var $winheight = $(window).height();
+                    var $winPos = $(document).scrollTop() + $winheight;
+        
+                    $(".anim").each(function () {
+                        var $pos = $(this).offset().top;
+                        if ($winPos > $pos) {
+                            $(this).addClass("anim-active");
+                        } else {
+                            $(this).removeClass("anim-active");
+                        }
+                    });
+                });
+            });
+        }
+        
+        startScrollAnimation();
+    } else {
+        $('.main-page').removeClass('animation');
     }
 }
 
