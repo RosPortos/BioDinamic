@@ -67,8 +67,7 @@ function initSwiper() {
         }
     }
 
-    if (screenWidth > 1023 && swiper2 == undefined && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-        console.log('true');
+    if (screenWidth > 1023 && swiper2 == undefined && slider && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
         swiper2 = new Swiper(".main-slider", {
             effect: "fade",
             speed: 1200,
@@ -98,14 +97,14 @@ function initSwiper() {
         $('.main-page').addClass('active');
         $('.header').removeClass('active');
 
-    } else if (screenWidth < 1024 && swiper2 != undefined) {
+    } else if (screenWidth < 1024 && swiper2 != undefined && slider) {
         swiper2.destroy();
         swiper2 = undefined;
         $('.main-page').removeClass('active');
         $('.header').css('right', 0);
     }
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screenWidth <= 1023) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screenWidth <= 1023 && $('.page').hasClass("main-page")) {
         $('.header').addClass('active');
         $('.main-page').addClass('animation');
 
@@ -128,7 +127,7 @@ function initSwiper() {
         }
         
         startScrollAnimation();
-    } else {
+    } else  {
         $('.main-page').removeClass('animation');
     }
 }

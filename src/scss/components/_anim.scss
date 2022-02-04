@@ -1,7 +1,6 @@
 .animation {
 
-  .special-menu__item,
-  .insta__item {
+  .special-menu__item {
     opacity: 0;
     transition: .6s linear;
 
@@ -22,6 +21,30 @@
   .about__img {
     transition: .6s linear;
     opacity: 0;
+    transform: translate3d(0, 40%, 0);
+
+    &.anim-active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .insta__inner {
+    opacity: 0;
+    transition: .6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+
+    &.anim-active {
+      opacity: 1;
+      transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+  }
+
+  .about__title,
+  .about__name,
+  .about__position {
+    transition: .6s linear;
+    opacity: 0;
     transform: translate3d(0, 100%, 0);
 
     &.anim-active {
@@ -30,13 +53,10 @@
     }
   }
 
-  .about__title,
-  .about__name,
-  .about__position,
   .about__descr {
     transition: .6s linear;
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 30%, 0);
 
     &.anim-active {
       opacity: 1;
@@ -88,7 +108,7 @@
     }
   }
 
-  .footer__bottom{
+  .footer__bottom {
     transition: .6s linear;
     opacity: 0;
     transform: translate3d(0, 100px, 0);
