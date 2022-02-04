@@ -36,12 +36,20 @@ function initSwiper() {
                 }
             }
             else if ($(".insta").is(e.target) || $(".insta").has(e.target).length != 0) {
-                const insta = document.querySelector('.insta');
+                if ($(".insta__list").is(e.target) || $(".insta__list").has(e.target).length != 0) {
+                    const instaList = document.querySelector('.insta__list');
 
-                if (Math.round(insta.scrollHeight) - Math.round(insta.scrollTop) == Math.round(insta.clientHeight) && deltaY > 0) {
-                    swiper2.slideNext();
-                } else if (insta.scrollTop == 0 && deltaY < 0) {
-                    swiper2.slidePrev();
+                    if (instaList.scrollTop == 0 && deltaY < 0) {
+                        swiper2.slidePrev();
+                    }
+                } else {
+                    const insta = document.querySelector('.insta');
+
+                    if (Math.round(insta.scrollHeight) - Math.round(insta.scrollTop) == Math.round(insta.clientHeight) && deltaY > 0) {
+                        swiper2.slideNext();
+                    } else if (insta.scrollTop == 0 && deltaY < 0) {
+                        swiper2.slidePrev();
+                    }
                 }
             } else {
                 if (deltaY > 0) {
@@ -113,7 +121,7 @@ function initSwiper() {
                 $(this).scroll(function () {
                     var $winheight = $(window).height();
                     var $winPos = $(document).scrollTop() + $winheight;
-        
+
                     $(".anim").each(function () {
                         var $pos = $(this).offset().top;
                         if ($winPos > $pos) {
@@ -125,9 +133,9 @@ function initSwiper() {
                 });
             });
         }
-        
+
         startScrollAnimation();
-    } else  {
+    } else {
         $('.main-page').removeClass('animation');
     }
 }
