@@ -105,7 +105,7 @@ function initSwiper() {
         $('.header').css('right', 0);
     }
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screenWidth <= 1023) {
         $('.header').addClass('active');
     }
 }
