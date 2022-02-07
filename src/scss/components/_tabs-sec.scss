@@ -1,6 +1,7 @@
 .tabs-sec {
     width: 100%;
     height: 100%;
+    background-color: #130f4bd0;
     .container {
         display: flex;
         justify-content: space-between;
@@ -19,7 +20,7 @@
         font-weight: 550;
         line-height: 1.2em;
         letter-spacing: 0em;
-        color: #454091;
+        color: #ffffff;
         position: relative;
         z-index: 2;
         transition: all 0.3s ease-in-out;
@@ -31,10 +32,10 @@
             content: '';
             width: 80px;
             height: 80px;
-            border: 2px solid #130f4b54;
+            border: 1px solid #130f4b54;
             border-radius: 50%;
             z-index: -2;
-            background-color: #fff;
+            background-color: #130f4bd0;
             left: -15px;
             top: 50%;
             transform: translateY(-50%);
@@ -44,7 +45,7 @@
     .tab-active {
         letter-spacing: 0.1em;
         &::before {
-            background-color: #d1ceffc7;
+            background-color: #d1ceff8a;
         }
     }
     .tab-content-wrapper {
@@ -56,13 +57,15 @@
         padding-right: 20px;
         position: relative;
         animation: tilt-in-br 0.95s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        
+        padding: 15px;
     }
     .tabs-content {
         display: none;
         @include adaptive("font-size", 20, 16);
         @include adaptive("line-height", 26, 22);
         font-weight: 500;
-        color: #130f4b;
+        color: #ffffff;
         padding-right: 20px;
         p {
             margin-bottom: 18px;

@@ -246,4 +246,10 @@
     input {
         font-size: 16px;
     }
+    .promo {
+        min-height: 90vh;
+    }
+    .promo .promo-item {
+        min-height: calc(100vh - 130px);
+    }
 }
