@@ -23,16 +23,17 @@
             }
 
             .about__right {
+                overflow: visible;
                 height: auto;
             }
         }
 
         &.insta {
             padding-bottom: 40px;
+        }
 
-            .insta__list {
-                max-height: unset;
-            }
+        .insta__inner {
+            max-width: 90%;
         }
     }
 
@@ -72,9 +73,9 @@
                 overflow-y: scroll;
                 padding-bottom: 40px;
 
-                .insta__list {
+                /* .insta__list {
                     max-height: unset;
-                }
+                } */
             }
         }
 
@@ -85,23 +86,23 @@
                     transform: translate3d(0, 0, 0) rotate(0deg) skew(0deg, 0deg);
 
                     &:nth-child(1) {
-                        top: 0;
-                        left: 0;
+                        top: -1px;
+                        left: -1px;
                     }
 
                     &:nth-child(2) {
-                        top: 0;
-                        right: 0;
+                        top: -1px;
+                        right: -1px;
                     }
 
                     &:nth-child(3) {
-                        bottom: 0;
-                        left: 0;
+                        bottom: -1px;
+                        left: -1px;
                     }
 
                     &:nth-child(4) {
-                        bottom: 0;
-                        right: 0;
+                        bottom: -1px;
+                        right: -1px;
                     }
                 }
             }
