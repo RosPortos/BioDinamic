@@ -1,7 +1,7 @@
 .tabs-sec {
     width: 100%;
     height: 100%;
-    background-color: #130f4bd0;
+    /* background-color: #130f4bd0; */
     .container {
         display: flex;
         justify-content: space-between;
@@ -16,11 +16,11 @@
         padding-top: 30px;
     }
     .tab {
-        @include adaptive("font-size", 24, 18);
+        @include adaptive("font-size", 22, 16);
         font-weight: 550;
         line-height: 1.2em;
         letter-spacing: 0em;
-        color: #ffffff;
+        color: #130f4bd0;
         position: relative;
         z-index: 2;
         transition: all 0.3s ease-in-out;
@@ -35,7 +35,7 @@
             border: 1px solid #130f4b54;
             border-radius: 50%;
             z-index: -2;
-            background-color: #130f4bd0;
+            background-color: #9b96d8d0;
             left: -15px;
             top: 50%;
             transform: translateY(-50%);
@@ -65,7 +65,7 @@
         @include adaptive("font-size", 20, 16);
         @include adaptive("line-height", 26, 22);
         font-weight: 500;
-        color: #ffffff;
+        color: #130f4bd0;
         padding-right: 20px;
         p {
             margin-bottom: 18px;
