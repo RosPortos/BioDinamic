@@ -65,7 +65,7 @@ function initSwiper() {
                 $('.page-link__top ').css('right', right);
                 $('.page-link__bottom').css('right', right);
                 $('.header').css('right', right);
-                $('.header').addClass('active');
+                /* $('.header').addClass('active'); */
                 $('.page-link ').addClass('active');
             } else {
                 $('.header').css('right', 0);
@@ -113,7 +113,7 @@ function initSwiper() {
     }
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screenWidth <= 1023 && $('.page').hasClass("main-page")) {
-        $('.header').addClass('active');
+        /* $('.header').addClass('active'); */
         $('.main-page').addClass('animation');
 
         function startScrollAnimation() {
